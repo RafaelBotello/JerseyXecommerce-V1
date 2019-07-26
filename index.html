@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="height: 10vh;">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="height: 10vh;">
     <a class="navbar-brand" href="#">Jersey X</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,37 +45,38 @@
       </ul>
     </div>
   </nav>
-  <!-- <header class="bg-light" style="height: 10vh;">
-     <h1>This is my header</h1> -->
-  <!-- <img
-        src="https://via.placeholder.com/1400x100?text=E+commerce+website"
-        alt="header"
-      /> 
-    </header> -->
-  <div class="container-fluid" style="height: 80vh;">
+  <div class="container-fluid" style="margin-top: 84px; height: 80vh;">
     <div class="row">
       <section class="col-md-3 bg-white" style="height: 80vh;">
         <div class="row">
-          <div class="col-sm-12 sticky">
+          <div class="col-sm-12 sticky fixedleft">
           <h1>Soccer Jerseys</h1>
-          <button style="width: 100%" class="btn btn-dark">
-            Yellow
-          </button>
-          <br>
-          <button style="width: 100%" class="btn btn-dark">
-            red
-          </button>
+          <button style="display: block; " class="btn btn-white">International</button>
+          <button style="display: block; " class="btn btn-white">MLS</button>
+          <button style="display: block; " class="btn btn-white">La Liga</button>
+          <button style="display: block; " class="btn btn-white">Liga Mx</button>
+          <button style="display: block; " class="btn btn-white">National</button>
+          <button style="display: block; " class="btn btn-white">Bundesliga</button>
+          <button style="display: block; " class="btn btn-white">Ligue 1</button>
+          <hr>
+          <h2>Colors</h2>
+          <button class="btn btn-warning button--left">Yellow</button>
+          <button class="btn btn-success button--left">Green</button><br>
+          <button class="btn btn-primary button--left">Blue</button>
+          <button class="btn btn-dark button--left">Black</button><br>
+          <button class="btn btn-danger button--left">Red</button>
+          <button class="btn button--left orangebtn">Orange</button><br>
         </div>
     </div>
     </section>
     <section class="col-md-9 bg-light row">
       <div class="col-md-4 bg-light">
-        <img class="prodbrazil" />
-        <b>Barcelona Jersey 2019/20</b>
+        <img class="prodtotten" />
+        <b>Tottenham Jersey 2019/20</b>
         <p>
           Men's Soccer Jersey<br />
           1 Color
-          <i style="float: right;">$99.99</i>
+          <i style="float: right;">$90</i>
         </p>
       </div>
       <div class="col-md-4 bg-light">
@@ -84,16 +85,16 @@
         <p>
           Men's Soccer Jersey<br />
           1 Color
-          <i style="float: right;">$99.99</i>
+          <i style="float: right;">$75</i>
         </p>
       </div>
       <div class="col-md-4 bg-light">
         <img class="prodbrazil" />
-        <b>Barcelona Jersey 2019/20</b>
+        <b>Brasil Jersey 2019/20</b>
         <p>
           Men's Soccer Jersey<br />
           1 Color
-          <i style="float: right;">$99.99</i>
+          <i style="float: right;">$125</i>
         </p>
       </div>
       <div class="col-md-4 bg-light">
@@ -178,7 +179,7 @@
         </p>
       </div>
   </div>
-  <footer class="card-footer bg-white" style="height: 10vh; margin-top: 10px;">
+  <footer class="card-footer bg-white footer-mgn" >
     <h2 style="color: black;">This is a footer</h2>
   </footer>
   </div>

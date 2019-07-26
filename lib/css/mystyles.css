@@ -20,8 +20,43 @@
     background-position: center;
 }
 
+.prodtotten {
+    margin-left: auto;
+    margin-right: auto;
+    height: 291px;
+    width: 291px;
+    display: block;
+    background-image: url(https://c.static-nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/zok2al2roeficzwabro6/tottenham-hotspur-2019-20-stadium-home-big-kids-soccer-jersey-BfwXP1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 b {
     font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.fixedleft {
+    display: block;
+    position: fixed;
+}
+
+.footer-mgn {
+    height:10vh;
+    margin-top: 20px;
+}
+
+.button--left{
+    margin: 10px;
+    width: 120px; 
+    display: inline-block;
+}
+
+.orangebtn {
+    background-color: #fd7e14;
+}
+
+.orangebtn:hover{
+    background-color: #df6c0d;
 }
 
