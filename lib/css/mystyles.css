@@ -1,0 +1,27 @@
+.prodbrazil {
+    margin-right: auto;
+    margin-left: auto;
+    height: 291px;
+    width: 291px;
+    display: block;
+    background-image: url(https://c.static-nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/inqo79w8xadqykqowz5v/brasil-stadium-2019-mens-jersey-PjmrpW.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.prodbarca {
+    margin-left: auto;
+    margin-right: auto;
+    height: 291px;
+    width: 291px;
+    display: block;
+    background-image: url(https://c.static-nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/iojclw3q8qboduoasxxa/fc-barcelona-2019-20-vapor-match-home-mens-soccer-jersey-Bj8JX3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+b {
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
