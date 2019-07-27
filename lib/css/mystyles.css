@@ -1,34 +1,35 @@
-.prodbrazil {
+.prod-brazil,
+.prod-barca,
+.prod-totten,
+.prod-barca-away,
+.prod-chelsea {
     margin-right: auto;
     margin-left: auto;
     height: 291px;
     width: 291px;
     display: block;
+    background-size: cover;
+    background-position: center;
+}
+
+.prod-brazil{
     background-image: url(https://c.static-nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/inqo79w8xadqykqowz5v/brasil-stadium-2019-mens-jersey-PjmrpW.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
-.prodbarca {
-    margin-left: auto;
-    margin-right: auto;
-    height: 291px;
-    width: 291px;
-    display: block;
+.prod-barca {
     background-image: url(https://c.static-nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/iojclw3q8qboduoasxxa/fc-barcelona-2019-20-vapor-match-home-mens-soccer-jersey-Bj8JX3.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
-.prodtotten {
-    margin-left: auto;
-    margin-right: auto;
-    height: 291px;
-    width: 291px;
-    display: block;
+.prod-totten {
     background-image: url(https://c.static-nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/zok2al2roeficzwabro6/tottenham-hotspur-2019-20-stadium-home-big-kids-soccer-jersey-BfwXP1.jpg);
-    background-size: cover;
-    background-position: center;
+}
+
+.prod-barca-away{
+    background-image: url(https://c.static-nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/sqbyimiaq7k4vocpak1d/fc-barcelona-2019-20-stadium-away-mens-soccer-jersey-qhRNNP.jpg);
+}
+
+.prod-chelsea{
+    background-image: url(https://c.static-nike.com/a/images/c_limit,w_318,f_auto/t_product_v1/nsuslj408eowh3jhwhpb/chelsea-fc-2019-20-vapor-match-away-mens-soccer-jersey-lnN9Nb.jpg);
 }
 
 b {
@@ -39,11 +40,6 @@ b {
 .fixedleft {
     display: block;
     position: fixed;
-}
-
-.footer-mgn {
-    height:10vh;
-    margin-top: 20px;
 }
 
 .button--left{
@@ -58,5 +54,10 @@ b {
 
 .orangebtn:hover{
     background-color: #df6c0d;
+}
+
+.footer-mgn {
+    height:10vh;
+    margin-top: 20px;
 }
 
