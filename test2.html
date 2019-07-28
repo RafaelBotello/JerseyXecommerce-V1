@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        
+<style>
+  
+.filterDiv {
+  /* background-color: #2196F3;
+  color: #ffffff; */
+  /* width: 100px;
+  line-height: 100px; */
+  /* text-align: center;
+  margin: 2px; */
+  display: none; 
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+<link rel="stylesheet" href="./lib/css/mystyles.css" />
+<title>Jersey X</title>
+<link rel="shortcut icon" href="./img/X.png" type="image/x-icon">
+</head>
+<body>
+
+<h2>Filter DIV Elements</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('national')"> national</button>
+  <button class="btn" onclick="filterSelection('champions')"> champions</button>
+  <button class="btn" onclick="filterSelection('laliga')"> laliga</button>
+  <button class="btn" onclick="filterSelection('womens')"> womens</button>
+  <div>
+      <div class="demo">
+     
+         <p>
+             <label for="amount">Price range:</label>
+             <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" />
+         </p>
+     
+         <div id="slider-range"></div>
+         <div id="products">
+                 <div data-price="10"> product - £10 </div>
+                 <div data-price="50"> product - £50 </div>
+                 <div data-price="100"> product - £100 </div>
+                 <div data-price="150"> product - £150 </div>
+                 <div data-price="200"> product - £200 </div>
+             </div>
+         </div>
+ 
+ </div>
+</div>
+
+<div class="container">
+  <div id="products" class="row">
+        <div  data-price="66" class="filterDiv national col-md-4 bg-light">
+                <div data-price="66"  class="prod-brazil prod" ></div>
+                <b>Brazil Jersey 2019/20</b>
+                <p>
+                  Men's Soccer Jersey<br />
+                  1 Color
+                  <i style="float: right;">$66</i>
+                </p>
+              </div>
+              <div data-price="165" class="filterDiv champions laliga col-md-4 bg-light">
+                <div data-price="165" class="prod-barca-away prod red" ></div>
+                <b>Barca Away Jersey 2019/20</b>
+                <p>
+                  Men's Soccer Jersey<br />
+                  <span style="color: red;">SOLD OUT</span>
+                  <i style="float: right;">$165</i>
+                </p>
+              </div>
+              <div class="filterDiv champions col-md-4 bg-light" data-price="130">
+                <div data-price="130" class="prod-juve prod" ></div>
+                <b>Juventus Jersey 2019/20</b>
+                <p>
+                  Men's Soccer Jersey<br />
+                  1 Color
+                  <i style="float: right;">$130</i>
+                </p>
+              </div>
+              <div data-price="79" class="filterDiv national col-md-4 bg-light">
+                <div data-price="79" class="prod-eng prod" ></div>
+                <b>England Jersey 2019/20</b>
+                <p>
+                  Men's Soccer Jersey<br />
+                  1 Color
+                  <i style="float: right;">$79</i>
+                </p>
+</div>
+<div data-price="130" class="filterDiv champions col-md-4 bg-light">
+        <div  data-price="130" class="prod-man prod" ></div>
+        <b>Manchester Jersey 2019/20</b>
+        <p>
+          Men's Soccer Jersey<br />
+          1 Color
+          <i style="float: right;">$130</i>
+        </p>
+      </div>
+      <div data-price="130" class="filterDiv national col-md-4 bg-light">
+        <div data-price="130" class="prod-mex prod" ></div>
+        <b>Mexico Jersey 2019/20</b>
+        <p>
+          Men's Soccer Jersey<br />
+          1 Color
+          <i style="float: right;">$130</i>
+        </p>
+      </div>
+      <div data-price="90"  class="filterDiv champions laliga col-md-4 bg-light">
+        <div data-price="90" class="prod-madrid prod" ></div>
+        <b>Madrid Jersey 2019/20</b>
+        <p>
+          Men's Soccer Jersey<br />
+          1 Color
+          <i style="float: right;">$90</i>
+        </p>
+      </div>
+      <div class="filterDiv champions col-md-4 bg-light">
+        <div class="prod-chelsea prod" ></div>
+        <b>Chelsea Jersey 2019/20</b>
+        <p>
+          Men's Soccer Jersey<br />
+          1 Color
+          <i style="float: right;">$90</i>
+        </p>
+      </div>
+      <div class="filterDiv national col-md-4 bg-light">
+        <div class="prod-us prod"></div>
+        <b>US Jersey 2019/20</b>
+        <p>
+          Men's Soccer Jersey<br />
+          <span style="color: red;">SOLD OUT</span>
+          <i style="float: right;">$90</i>
+        </p>
+      </div>
+      <div class="filterDiv national womens col-md-4 bg-light">
+        <div class="prod-us-away prod"></div>
+        <b>US Away Jersey 2019/20</b>
+        <p>
+          Women's Soccer Jersey<br />
+          1 Color
+          <i style="float: right;">$90</i>
+        </p>
+      </div>
+</div>
+
+
+<script src="./lib/js/slidertest.js">
+</script>
+
+
+<script src="./lib/js/test.js"></script>
+
+</body>
+</html>
