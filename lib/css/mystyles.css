@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
 .navbar-custom {
     height: 10vh; 
     background-color: #0e1111;
@@ -57,6 +62,7 @@
             width: 120px; 
         }
 }
+
 
 .custom-img {
     height: 300px;
