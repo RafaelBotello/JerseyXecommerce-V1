@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <!-- Fontawsome -->
+    <link href="./fontawesome/css/all.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -15,356 +18,163 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- jQuery UI-->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- custom styles -->
     <link rel="stylesheet" href="./lib/css/mystyles.css" />
     <title>Jersey X</title>
     <link rel="shortcut icon" href="./img/X.png" type="image/x-icon" />
-  </head>
-
-  <body>
+</head>
+<body>
     <nav
-      class="navbar navbar-custom fixed-top navbar-expand-lg"
-    >
-      <a class="navbar-brand" href="#"
-        >Jersey
-        <img src="./img/X.png" height="20" width="20" alt="Jersey X logo"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container-fluid" style="margin-top: 84px; height: 80vh;">
-      <div class="row">
-        <section class="col-md-3 bg-white" style="height: 80vh;">
-          <div class="row">
-            <div class="col-sm-12 sticky fixedleft " id="myBtnContainer">
-              <h1>Soccer Jerseys</h1>
-              <button
-                style="display: block; "
-                onclick="filterSelection('seriea')"
-                class="btn btn-white"
-              >
-                Serie A
-              </button>
-              <button
-                style="display: block; "
-                onclick="filterSelection('premier')"
-                class="btn btn-white"
-              >
-                Premier
-              </button>
-              <button
-                style="display: block; "
-                class="btn btn-white"
-                onclick="filterSelection('laliga')"
-              >
-                La Liga
-              </button>
-              <button
-                style="display: block; "
-                class="btn btn-white"
-                onclick="filterSelection('ligamx')"
-              >
-                Liga Mx
-              </button>
-              <button
-                style="display: block; "
-                class="btn btn-white"
-                onclick="filterSelection('national')"
-              >
-                National
-              </button>
-              <button
-                style="display: block; "
-                class="btn btn-white"
-                onclick="filterSelection('bundesliga')"
-              >
-                Bundesliga
-              </button>
-              <button
-                style="display: block; "
-                class="btn btn-white"
-                onclick="filterSelection('all')"
-              >
-                Show all
-              </button>
-              <div class="demo">
-
-                  <p>
-                      <label for="amount">Price range:</label>
-                      <input type="text" id="amount" style="border:0; color: black; font-weight:bold;" />
-                  </p>
-              
-                  <div style="width: 270px; " id="slider-range"></div>
-              <hr />
-              <h2>Colors</h2>
-              <button
-                class="btn btn-warning button--left"
-                onclick="filterSelection('yellow')"
-              >
-                Yellow
-              </button>
-              <button
-                class="btn btn-success button--left"
-                onclick="filterSelection('green')"
-              >
-                Green</button
-              ><br />
-              <button
-                class="btn btn-primary button--left"
-                onclick="filterSelection('blue')"
-              >
-                Blue
-              </button>
-              <button
-                class="btn btn-dark button--left"
-                onclick="filterSelection('black')"
-              >
-                Black</button
-              ><br />
-              <button
-                class="btn btn-danger button--left"
-                onclick="filterSelection('red')"
-              >
-                Red
-              </button>
-              <button
-                class="btn button--left"
-                onclick="filterSelection('white')"
-              >
-                White</button
-              ><br />
-            </div>
-          </div>
-        </section>
-        <section id="products" class="col-md-9 bg-light row">
-          <div  data-price="90" class="filterDiv premier col-md-4 bg-light">
-            <div data-price="90"  class="prod-totten prod"></div>
-            <b>Tottenham Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$90</i>
-            </p>
-          </div>
-          <div  data-price="165" class="filterDiv laliga blue red col-md-4 bg-light">
-            <div data-price="165"  class="prod-barca prod"></div>
-            <b>Barcelona Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$165</i>
-            </p>
-          </div>
-          <div  data-price="66" class="filterDiv national yellow green col-md-4 bg-light">
-            <div data-price="66"  class="prod-brazil prod"></div>
-            <b>Brazil Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$66</i>
-            </p>
-          </div>
-          <div  data-price="165" class="filterDiv laliga yellow red col-md-4 bg-light">
-            <div data-price="165"  class="prod-barca-away prod red"></div>
-            <b>Barca Away Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              <span style="color: red;">SOLD OUT</span>
-              <i style="float: right;">$165</i>
-            </p>
-          </div>
-          <div  data-price="130" class="filterDiv seriea  col-md-4 bg-light">
-            <div data-price="130"  class="prod-juve prod"></div>
-            <b>Juventus Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$130</i>
-            </p>
-          </div>
-          <div  data-price="79" class="filterDiv national red col-md-4 bg-light">
-            <div data-price="79"  class="prod-eng prod"></div>
-            <b>England Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$79</i>
-            </p>
-          </div>
-          <div  data-price="130" class="filterDiv premier red col-md-4 bg-light">
-            <div data-price="130"  class="prod-man prod"></div>
-            <b>Manchester Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$130</i>
-            </p>
-          </div>
-          <div  data-price="130" class="filterDiv national white green  col-md-4 bg-light">
-            <div data-price="130"  class="prod-mex prod"></div>
-            <b>Mexico Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$130</i>
-            </p>
-          </div>
-          <div  data-price="90" class="filterDiv laliga white col-md-4 bg-light">
-            <div data-price="90"  class="prod-madrid prod"></div>
-            <b>Madrid Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$90</i>
-            </p>
-          </div>
-          <div  data-price="90" class="filterDiv premier white col-md-4 bg-light">
-            <div data-price="90"  class="prod-chelsea prod"></div>
-            <b>Chelsea Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$90</i>
-            </p>
-          </div>
-          <div  data-price="90" class="filterDiv national red blue col-md-4 bg-light">
-            <div data-price="90"  class="prod-us prod"></div>
-            <b>US Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              <span style="color: red;">SOLD OUT</span>
-              <i style="float: right;">$90</i>
-            </p>
-          </div>
-          <div  data-price="90" class="filterDiv national white red blue col-md-4 bg-light">
-            <div data-price="90"  class="prod-us-away prod"></div>
-            <b>US Away Jersey 2019/20</b>
-            <p>
-              Women's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$90</i>
-            </p>
-          </div>
-          <div  data-price="39" class="filterDiv bundesliga black yellow col-md-4 bg-light">
-            <div data-price="39"  class="prod-bor prod"></div>
-            <b>BVB Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$39</i>
-            </p>
-          </div>
-          <div  data-price="90" class="filterDiv ligamx white col-md-4 bg-light">
-            <div data-price="90"  class="prod-unam prod"></div>
-            <b>Pumas Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$90</i>
-            </p>
-          </div>
-          <div  data-price="90" class="filterDiv seriea black col-md-4 bg-light">
-            <div data-price="90"  class="prod-milan prod"></div>
-            <b>Milan Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$90</i>
-            </p>
-          </div>
-          <div  data-price="90" class="filterDiv ligamx blue yellow col-md-4 bg-light">
-            <div data-price="90"  class="prod-unam-away prod"></div>
-            <b>Pumas Away Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$90</i>
-            </p>
-          </div>
-          <div  data-price="90" class="filterDiv bundesliga red blue col-md-4 bg-light">
-            <div data-price="90"  class="prod-bayern prod"></div>
-            <b>Bayern Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <i style="float: right;">$90</i>
-            </p>
-          </div>
-          <div  data-price="44" class="filterDiv ligamx white red col-md-4 bg-light">
-            <div data-price="44"  class="prod-chivas prod"></div>
-            <b>Chivas Jersey 2019/20</b>
-            <p>
-              Men's Soccer Jersey<br />
-              1 Color
-              <span style="float: right; text-decoration: line-through; color:red">$90</span><i style="float: right;">$44.99</i>
-            </p>
-          </div>
-          <div data-price="90" class="filterDiv seriea blue black col-md-4 bg-light">
-              <div data-price="90" class="prod-inter prod"></div>
-              <b>Inter Jersey 2019/20</b>
-              <p>
-                Women's Soccer Jersey<br />
-                1 Color
-                <i style="float: right;">$90</i>
-              </p>
-            </div>
-        </section>
-      </div>
-      <footer class="card-footer bg-light footer-mgn row">
-        <div style="text-align: center; display: block;">
-          <h2 style="color: black;">Jersey <img src="./img/X.png" height="20" width="20" alt="Jersey X logo"
-            /></h2>
-        </div>
-        </footer>
+    class="navbar navbar-dark navbar-custom fixed-top navbar-expand-lg"
+  >
+    <a class="navbar-brand" href="#"
+      >Jersey
+      <img src="./img/X.png" height="20" width="20" alt="Jersey X logo"
+    /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav  droptoggle mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html"
+            >Home<span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./product.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
-
-    
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-    <script src="./lib/js/slider.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./lib/js/filter.js"></script>
-  </body>
+  </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/slide1.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Welcome to Jersey X</h1>
+                <p><a href="./product.html" class="link">Buy now.</a></p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/slide5.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Check out our new products!</h1>
+                <p><a href="./product.html" class="link">Visit now.</a></p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/slide3.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Buy for a friend.</h1>
+                <p><a href="./product.html" class="link">Visit now.</a></p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/slide4.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>The perfect gift.</h1>
+                <p><a href="./product.html" class="link">Visit now.</a></p>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-md-4 bg-light custom-img custom-img-6"></div>
+        <div class="col-md-8 bg-light">
+        <p style="margin-top: 50px; font-size: 3rem;" align="center" class="text-dark">At Jersey X, we care about our customers.
+        </p>
+      </div>
+      <div class="col-md-7 bg-light text-dark" style="padding: 20px; font-size: 1.6rem;" align="center"><h2>Who are we</h2>
+        <p> A global team behind a smart website
+            Jersey X is kind of a peculiar bunch of very different people from all
+             corners of the globe. One thing we all share is a belief that 
+             sports should unite people, and not get in their way.</p>
+      </div>
+      <div class="col-md-5 bg-light custom-img custom-img-4"></div>
+      <div class="col-md-12 bg-light custom-img custom-img-3"><span class="img-text"><i>Jersey</i><img src="./img/X.png" height="60" width="60" alt="Jersey X logo"
+        /></span></div>
+      <div class="col-md-8 bg-light text-dark" style="padding: 30px; font-size: 2.2rem;" align="center">
+        <h3>Don't forget to review our products!</h3>
+        <p>Your opinion matters and helps us improve our products.</p>
+        <a href="./contact.html" class="link"><i> Thank you!</i></a>
+      </div>
+        <div class="col-md-4 bg-light custom-img custom-img-1"> </div>
+      </div>
+      <!-- Footer -->
+      <footer class="page-footer font-small bg-light" style=" width: 100%; display: block; position: absolute;">
+          <hr>
+        <div class="container" style="display: block;">
+            <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-8 py-5">
+                <div class="mb-5 flex-center">
+                  <a href="https://facebook.com" class="fb-ic">
+                    <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                  <a href="https://twitter.com"  class="tw-ic">
+                    <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                  <a href="https://google.com"  class="gplus-ic">
+                    <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                  <a href="https://www.instagram.com/jimmyplox/?hl=en"  target="blank" class="ins-ic">
+                    <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                  <a href="https://youtube.com" class="pin-yt">
+                    <i class="fab fa-youtube fa-lg white-text fa-2x"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright text-center py-3">&copy; 2018 Copyright:
+            <a href="https://rafaelbotello.github.io/ecommerce/#"> Jersey X</a>
+          </div>
+        </footer>
+          </div>
+          
+          <!-- Optional JavaScript -->
+          <!-- jQuery -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      
+          <script src="./lib/js/slider.js"></script>
+          <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+          ></script>
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+          ></script>
+          <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+          ></script>
+          <script src="./lib/js/filter.js"></script>
+          
+        </body>
 </html>

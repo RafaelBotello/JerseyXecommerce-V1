@@ -46,45 +46,47 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav droptoggle">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="text-white nav-link" href="#"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
+            <a class="text-white nav-link" href="#">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Exclusive Jerseys
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Barcelona</a>
-              <a class="dropdown-item" href="#">Juventus</a>
-              <a class="dropdown-item" href="#">Mexico</a>
-            </div>
+            <a class="text-white nav-link" href="#">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
+    
     <div class="container-fluid" style="margin-top: 84px; height: 80vh;">
       <div class="row">
-        <section class="col-md-3 bg-white" style="height: 80vh;">
+        <section class="col-md-3 bg-white" style="display: block; height: 80vh;">
           <div class="row">
-            <div class="col-sm-12 sticky fixedleft " id="myBtnContainer">
-              <h1>Soccer Jerseys</h1>
+              <div
+              class="navbar-light bg-light textcolor"
+              style="height: 10vh;"
+              >
+            <div class="col-sm-12 sticky fixedleft"  id="myBtnContainer">
+                
+                <button
+                class="navbar-toggler bg-success"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown1"
+                aria-controls="navbarNavDropdown1"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown1">
+                <ul class="navbar-nav droptoggle">
+                    <h1>Soccer Jerseys</h1>
+                  <li class="nav-item">
               <button
                 style="display: block; "
                 onclick="filterSelection('international')"
@@ -92,6 +94,8 @@
               >
                 International
               </button>
+            </li>
+            <li class="nav-item">
               <button
                 style="display: block; "
                 onclick="filterSelection('premier')"
@@ -99,29 +103,40 @@
               >
                 Premier
               </button>
+            </li>
+            <li class="nav-item">
               <button style="display: block; " class="btn btn-white" onclick="filterSelection('laliga')">
                 La Liga
               </button>
+            </li>
+            <li class="nav-item">
               <button style="display: block; " class="btn btn-white" onclick="filterSelection('ligamx')">
                 Liga Mx
               </button>
+            </li>
+            <li class="nav-item">
               <button style="display: block; " class="btn btn-white" onclick="filterSelection('national')">
                 National
               </button>
+            </li>
+            <li class="nav-item">
               <button style="display: block; " class="btn btn-white" onclick="filterSelection('bundesliga')">
                 Bundesliga
               </button>
+            </li>
+            <li class="nav-item">
               <button style="display: block; " class="btn btn-white" onclick="filterSelection('all')">
                 Show all
               </button>
-              <div class="demo">
+            </li>
+              <!-- <div class="demo">
 
                   <p>
                       <label for="amount">Price range:</label>
                       <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" />
                   </p>
               
-                  <div style="width: 270px; " id="slider-range"></div>
+                  <div style="width: 270px; " id="slider-range"></div> -->
               <hr />
               <h2>Colors</h2>
               <button class="btn btn-warning button--left" onclick="filterSelection('yellow')">Yellow</button>
@@ -132,6 +147,8 @@
               <button class="btn button--left orangebtn" onclick="filterSelection('orange')">Orange</button><br />
             </div>
           </div>
+          </div>
+        </div>
         </section>
         <div id="products" class="col-md-9 bg-light row">
           <div data-price="10" class="filterDiv premier col-md-4 bg-light">
@@ -271,9 +288,9 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-    <script src="./lib/js/slidertest.js"></script>
-    <script src="./lib/js/test.js"></script>
+<!-- 
+    <script src="./lib/js/slidertest.js"></script> -->
+    <script src="./lib/js/filter.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
