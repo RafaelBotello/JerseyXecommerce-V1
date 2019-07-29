@@ -13,6 +13,27 @@
     color: white;
 }
 
+.parallax { 
+    /* The image used */
+  
+    /* Set a specific height */
+    height: 80vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax-1{
+    background-image: url("../../img/thanks.jpg");
+  }
+
+  .parallax-2{
+    background-image: url("../../img/slide1.jpg");
+  }
+
 @media only screen and (min-width: 800px){
 
     
@@ -202,13 +223,18 @@ b {
 }
 
 
-.orangebtn {
-    background-color: #fd7e14;
+/* Styles for error */
+
+
+input.error {
+    border: 1px solid red;
 }
 
-.orangebtn:hover{
-    background-color: #df6c0d;
+label.error {
+    font-weight: normal;
+    color: red;
 }
+
 
  /* Styles for the filter */
 

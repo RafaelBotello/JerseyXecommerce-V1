@@ -52,20 +52,44 @@
       </ul>
     </div>
   </nav>
-  <div class="container-fluid text-dak" style="display: block; margin-top: 100px;">
-      <section class="row">
+
+<div class="parallax parallax-2"> </div>
+  <div class="container-fluid text-dak" style="display: block;">
+      <section >
         <div class="col-md-12 bg-light">
-          <h1>Contact Us!</h1>
-          <form class="form-group">
-              <label class="col-md-4 col-form-label">Name:</label><input class="form-control" type="text">
-              <label class="col-md-4 col-form-label">Email:</label><input class="form-control" type="email">
-              <label class="col-md-4 col-form-label">Message</label><br><textarea  class="form-control" cols="50" placeholder="Write a message..." rows="10"></textarea>
+          <form class="form-group" id="form" method="#" action="#">
+            <div class="form-row" >
+              <div class="col-md-5"></div>
+              <div class="col-md-3"><h1>Contact Us!</h1></div>
               <div class="col-md-4"></div>
-              <button class="col-md-4 btn btn-primary" type="submit">Submit</button>
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+              <label class="col-form-label" for="name">Name:</label><input id="name" name="name"  data-validation-error-msg="You did not enter a name!" data-validation="length alphanumeric" data-validation-length="min4" class="form-control" type="text">
+            </div>
+            <div class="col-md-3 bg-transparent"></div>
+            <div class="col-md-3 "></div>
+            <div class="col-md-6">
+              <label class="col-form-label" for="email">Email:</label><input id="email" name="email" data-validation="email"  data-validation-error-msg="You did not enter a valid email!"  class="form-control" type="email">
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-6 ">
+              <label class="col-form-label" for="message">Message</label><br><textarea id="message"  name="message" data-validation="length alphanumeric"  data-validation-error-msg="You did not enter a comment!" data-validation-length="25-200" class="form-control" cols="50" placeholder="Write a message..." rows="10"></textarea>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-4"></div>
+              <div class="col-md-4">
+              <button class="btn btn-primary" style="margin: 10px; display: block; width: 100%;" type="submit">Submit</button>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
           </form>
+        </div>
         </div>
         </section>
     </div>
+    <div class="parallax parallax-1"> </div>
+ 
        <!-- Footer -->
 <footer class="page-footer font-small bg-light" style=" width: 100%; display: block; position: absolute;">
     <hr>
@@ -103,6 +127,7 @@
     
     <!-- Optional JavaScript -->
     <!-- jQuery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script
@@ -120,5 +145,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="./lib/js/validation.js"></script>
   </body>
 </html>
